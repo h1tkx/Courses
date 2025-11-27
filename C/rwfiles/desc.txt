@@ -1,0 +1,32 @@
+Exercice 1: Writing to a Text File (Beginner)
+
+Objective: Create a program that opens a file named info.txt in writing mode.
+Write a character, a string, and an integer into it using format specifiers, then close the file properly.
+
+Constraint: You must ensure the file opened successfully before writing.
+
+--
+
+Exercice 2: Reading from a Text File (Intermediate)
+Objective: Write a program that opens the info.txt file created in Exercise 1.
+Read the character, the string, and the integer back into variables and display them on the console.
+
+Constraint: Use fscanf for formatted reading as demonstrated in the course examples.
+
+--
+
+Exercice 3: Binary File Storage (Advanced)
+Objective: Create an array of 5 floating-point numbers.
+Write this entire array at once into a binary file named numbers.dat.
+Then, verify the operation by clearing the array in memory and reading the data back from the file.
+
+Constraint: Use fwrite and fread with sizeof to handle the binary data in blocks.
+
+--
+
+Exercice 4: Random Access / Direct Access (Expert)
+Objective: Using the numbers.dat binary file created in Exercise 3 (containing 1.1, 2.2, 3.3, 4.4, 5.5),
+write a program that modifies only the 3rd element (changing 3.3 to 99.9) without rewriting the other numbers.
+
+Constraint: You must use fseek to position the cursor directly at the 3rd element, write the new value,
+and then use rewind or fseek to go back to the start to display the updated file content.
